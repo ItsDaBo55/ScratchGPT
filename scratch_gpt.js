@@ -1,4 +1,4 @@
-const {Session, Cloud} = require('./node_modules/scratchcloud');
+const {Session, Cloud} = require('./node_modules/scratchcloud/index.js');
 const {OpenAI} = require('openai');
 const express = require('express');
 const app = express()
