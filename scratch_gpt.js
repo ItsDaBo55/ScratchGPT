@@ -179,3 +179,14 @@ async function startSession() {
 
 // Start the session
 startSession();
+async function keepAlive() {
+  try {
+    const response = await fetch("https://scratchgpt.onrender.com");
+    const text = await response.text();
+    console.log(`[KeepAlive] Response: ${text}`);
+  } catch (error) {
+    console.error(`[KeepAlive] Error:`, error);
+  }
+}
+
+setInterval(keepAlive, 5000); 
