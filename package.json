@@ -1,6 +1,5 @@
 {
   "dependencies": {
     "openai": "^5.0.1",
-    "scratchcloud": "^1.3.0"
   }
 }
